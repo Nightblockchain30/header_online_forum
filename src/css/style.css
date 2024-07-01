@@ -3,4 +3,92 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #454751;
+}
+
+main {
+  margin-top: 157px;
+  margin-left: 160px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 960px;
+}
+main .main__container_hero-h1 {
+  font-family: "Merriweather", serif;
+  color: white;
+  font-size: 80px;
+}
+main .main__container_hero-p {
+  color: #ABABAB;
+  font-size: 24px;
+}
+main .main__container_imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 204px);
+  gap: 32px;
+}
+main .main__container_imgs-black {
+  background-color: #6E1FED;
+  border-radius: 90px;
+  max-width: 204px;
+  max-height: 509px;
+  background-image: url("../img/hero-black.png");
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: -340px 10px;
+  transition: all 1s;
+}
+main .main__container_imgs-black:hover {
+  border-radius: 40px;
+  transition: all 1.5s;
+}
+main .main__container_imgs-asian {
+  background-color: #60D3D9;
+  max-width: 240px;
+  max-height: 240px;
+  border-radius: 90px;
+  background-image: url("../img/hero-asian.png");
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: -250px -20px;
+  transition: all 1s;
+}
+main .main__container_imgs-asian:hover {
+  border-radius: 40px;
+  transition: all 1.5s;
+}
+main .main__container_imgs-redhair {
+  background-color: #DB2A6B;
+  max-width: 240px;
+  max-height: 240px;
+  border-radius: 90px;
+  background-image: url("../img/hero-redhair.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: -280px -290px;
+  transition: all 1s;
+}
+main .main__container_imgs-redhair:hover {
+  border-radius: 40px;
+  transition: all 1.5s;
+}
+main .main__container_imgs-glasses {
+  background-color: #FF7E29;
+  border-radius: 90px;
+  max-width: 204px;
+  max-height: 509px;
+  background-image: url("../img/hero-glasses.png");
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: -340px 10px;
+  transition: all 1s;
+}
+main .main__container_imgs-glasses:hover {
+  border-radius: 40px;
+  transition: all 1.5s;
 }/*# sourceMappingURL=style.css.map */
