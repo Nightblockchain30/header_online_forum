@@ -29,7 +29,7 @@ main .main__container_hero-p {
 main .main__container_imgs {
   display: grid;
   grid-template-columns: repeat(2, 204px);
-  gap: 32px;
+  column-gap: 32px;
 }
 main .main__container_imgs-black {
   background-color: #6E1FED;
@@ -41,6 +41,10 @@ main .main__container_imgs-black {
   background-size: 900px;
   background-position: -340px 10px;
   transition: all 1s;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 main .main__container_imgs-black:hover {
   border-radius: 40px;
@@ -72,6 +76,10 @@ main .main__container_imgs-redhair {
   background-size: 800px;
   background-position: -280px -290px;
   transition: all 1s;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 main .main__container_imgs-redhair:hover {
   border-radius: 40px;
@@ -87,6 +95,10 @@ main .main__container_imgs-glasses {
   background-size: 900px;
   background-position: -340px 10px;
   transition: all 1s;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 main .main__container_imgs-glasses:hover {
   border-radius: 40px;
