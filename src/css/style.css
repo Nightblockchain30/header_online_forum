@@ -27,80 +27,96 @@ main .main__container_hero-p {
   font-size: 24px;
 }
 main .main__container_imgs {
-  display: grid;
-  grid-template-columns: repeat(2, 204px);
-  column-gap: 32px;
+  display: inline-flex;
+  gap: 32px;
 }
-main .main__container_imgs-black {
+main .main__container_imgs-grid1 {
+  display: grid;
+  row-gap: 32px;
+  align-content: center;
+}
+main .main__container_imgs-grid1 .main__container_imgs-black {
   background-color: #6E1FED;
   border-radius: 90px;
-  max-width: 204px;
-  max-height: 509px;
+  width: 240px;
+  height: 509px;
   background-image: url("../img/hero-black.png");
   background-repeat: no-repeat;
-  background-size: 900px;
-  background-position: -340px 10px;
+  background-size: 1050px;
+  background-position: -390px 10px;
   transition: all 1s;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
 }
-main .main__container_imgs-black:hover {
+main .main__container_imgs-grid1 .main__container_imgs-black:hover {
   border-radius: 40px;
   transition: all 1.5s;
 }
-main .main__container_imgs-asian {
-  background-color: #60D3D9;
-  max-width: 240px;
-  max-height: 240px;
-  border-radius: 90px;
-  background-image: url("../img/hero-asian.png");
-  background-repeat: no-repeat;
-  background-size: 700px;
-  background-position: -250px -20px;
-  transition: all 1s;
-}
-main .main__container_imgs-asian:hover {
-  border-radius: 40px;
-  transition: all 1.5s;
-}
-main .main__container_imgs-redhair {
+main .main__container_imgs-grid1 .main__container_imgs-redhair {
   background-color: #DB2A6B;
-  max-width: 240px;
-  max-height: 240px;
+  width: 240px;
+  height: 240px;
   border-radius: 90px;
   background-image: url("../img/hero-redhair.png");
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: 800px;
-  background-position: -280px -290px;
+  background-position: -270px -300px;
   transition: all 1s;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
-main .main__container_imgs-redhair:hover {
+main .main__container_imgs-grid1 .main__container_imgs-redhair:hover {
   border-radius: 40px;
   transition: all 1.5s;
 }
-main .main__container_imgs-glasses {
+main .main__container_imgs-grid2 {
+  display: grid;
+  row-gap: 32px;
+  align-content: center;
+}
+main .main__container_imgs-grid2 .main__container_imgs-asian {
+  background-color: #60D3D9;
+  width: 240px;
+  height: 240px;
+  border-radius: 90px;
+  background-image: url("../img/hero-asian.png");
+  background-repeat: no-repeat;
+  background-size: 780px;
+  background-position: -270px -20px;
+  transition: all 1s;
+}
+main .main__container_imgs-grid2 .main__container_imgs-asian:hover {
+  border-radius: 40px;
+  transition: all 1.5s;
+}
+main .main__container_imgs-grid2 .main__container_imgs-glasses {
   background-color: #FF7E29;
   border-radius: 90px;
-  max-width: 204px;
-  max-height: 509px;
+  width: 240px;
+  height: 509px;
   background-image: url("../img/hero-glasses.png");
   background-repeat: no-repeat;
   background-size: 900px;
-  background-position: -340px 10px;
+  background-position: -320px 10px;
   transition: all 1s;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
 }
-main .main__container_imgs-glasses:hover {
+main .main__container_imgs-grid2 .main__container_imgs-glasses:hover {
+  border-radius: 40px;
+  transition: all 1.5s;
+}
+main .main__container_imgs-grid3 {
+  display: grid;
+  align-content: center;
+}
+main .main__container_imgs-grid3 .main__container_imgs-happy-black {
+  background-color: #F4B840;
+  border-radius: 90px;
+  width: 240px;
+  height: 509px;
+  background-image: url("../img/hero-happy-black.png");
+  background-repeat: no-repeat;
+  background-size: 790px;
+  background-position: -380px -79px;
+  transition: all 1s;
+}
+main .main__container_imgs-grid3 .main__container_imgs-happy-black:hover {
   border-radius: 40px;
   transition: all 1.5s;
 }/*# sourceMappingURL=style.css.map */

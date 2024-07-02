@@ -23,118 +23,126 @@ main {
     }
 
     .main__container_imgs {
-        display: grid;
-        grid-template-columns: repeat(2, 204px);
-        // grid-template-rows: repeat(3, 1fr);
-        // grid-auto-columns: 204px;
-        column-gap: 32px;
+        display: inline-flex;
+        gap: 32px;
 
-        &-black {
-            background-color: #6E1FED;
-            border-radius: 90px;
-            max-width: 204px;
-            max-height: 509px;
+        &-grid1 {
+            display: grid;
+            row-gap: 32px;
+            align-content: center;
 
-            background-image: url("../img/hero-black.png");
-            background-repeat: no-repeat;
-            background-size: 900px;
-            background-position: -340px 10px;
-            transition: all 1s;
+            .main__container_imgs-black {
+                background-color: #6E1FED;
+                border-radius: 90px;
+                width: 240px;
+                height: 509px;
 
-            grid-column-start: 1;
-            grid-column-end: 2;
+                background-image: url("../img/hero-black.png");
+                background-repeat: no-repeat;
+                background-size: 1050px;
+                background-position: -390px 10px;
+                transition: all 1s;
 
-            grid-row-start: 1;
-            grid-row-end: 3;
+                &:hover {
+                    border-radius: 40px;
+                    transition: all 1.5s;
+                }
+            }
+
+            .main__container_imgs-redhair {
+                background-color: #DB2A6B;
+                width: 240px;
+                height: 240px;
+                border-radius: 90px;
+                // rotate: 90deg;  
+
+                background-image: url("../img/hero-redhair.png");
+                background-repeat: no-repeat;
+                background-repeat: no-repeat;
+                background-size: 800px;
+                background-position: -270px -300px;
+                transition: all 1s;
 
 
-            &:hover {
-                border-radius: 40px;
-                transition: all 1.5s;
+                &:hover {
+                    border-radius: 40px;
+                    transition: all 1.5s;
+                }
+
             }
         }
 
-        &-asian {
-            background-color: #60D3D9;
-            max-width: 240px;
-            max-height: 240px;
-            border-radius: 90px;
-            // rotate: 90deg;
+        &-grid2 {
+            display: grid;
+            row-gap: 32px;
+            align-content: center;
 
-            background-image: url("../img/hero-asian.png");
-            background-repeat: no-repeat;
-            background-size: 700px;
-            background-position: -250px -20px;
-            transition: all 1s;
+            .main__container_imgs-asian {
+                background-color: #60D3D9;
+                width: 240px;
+                height: 240px;
+                border-radius: 90px;
+                // rotate: 90deg;  
 
-            // grid-column-start: 2;
-            // grid-column-end: 3;
+                background-image: url("../img/hero-asian.png");
+                background-repeat: no-repeat;
+                background-size: 780px;
+                background-position: -270px -20px;
+                transition: all 1s;
 
-
-            // grid-row-start: 1;
-            // grid-row-end: 3;
-
-            &:hover {
-                border-radius: 40px;
-                transition: all 1.5s;
+                &:hover {
+                    border-radius: 40px;
+                    transition: all 1.5s;
+                }
             }
 
+            .main__container_imgs-glasses {
+                background-color: #FF7E29;
+                border-radius: 90px;
+                width: 240px;
+                height: 509px;
+
+                background-image: url("../img/hero-glasses.png");
+                background-repeat: no-repeat;
+                background-size: 900px;
+                background-position: -320px 10px;
+
+                transition: all 1s;
+
+
+                &:hover {
+                    border-radius: 40px;
+                    transition: all 1.5s;
+                }
+
+            }
         }
 
-        &-redhair {
-            background-color: #DB2A6B;
-            max-width: 240px;
-            max-height: 240px;
-            border-radius: 90px;
-            // rotate: 90deg;
+        &-grid3 {
 
-            background-image: url("../img/hero-redhair.png");
-            background-repeat: no-repeat;
-            background-repeat: no-repeat;
-            background-size: 800px;
-            background-position: -280px -290px;
-            transition: all 1s;
+            display: grid;
+            align-content: center;
 
-            grid-column-start: 1;
-            grid-column-end: 2;
+            .main__container_imgs-happy-black {
+                background-color: #F4B840;
+                border-radius: 90px;
+                width: 240px;
+                height: 509px;
 
+                background-image: url("../img/hero-happy-black.png");
+                background-repeat: no-repeat;
+                background-size: 790px;
+                background-position: -380px -79px;
+                transition: all 1s;
 
-            grid-row-start: 3;
-            grid-row-end: 4;
+                &:hover {
+                    border-radius: 40px;
+                    transition: all 1.5s;
+                }
 
-            &:hover {
-                border-radius: 40px;
-                transition: all 1.5s;
             }
 
-        }
-
-        &-glasses {
-            background-color: #FF7E29;
-            border-radius: 90px;
-            max-width: 204px;
-            max-height: 509px;
-
-            background-image: url("../img/hero-glasses.png");
-            background-repeat: no-repeat;
-            background-size: 900px;
-            background-position: -340px 10px;
-            transition: all 1s;
-
-            grid-column-start: 2;
-            grid-column-end: 3;
-
-
-            grid-row-start: 2;
-            grid-row-end: 4;
-
-            &:hover {
-                border-radius: 40px;
-                transition: all 1.5s;
-            }
         }
     }
-
-
 
 }
