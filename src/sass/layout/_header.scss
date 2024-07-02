@@ -1,0 +1,40 @@
+.header__container {
+    margin-top: 46px;
+    margin-left: 160px;
+    margin-right: 160px;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+
+    &-nav {
+        margin-left: auto;
+        margin-right: 100px;
+
+        &-ul {
+            display: flex;
+            align-items: center;
+            column-gap: 48px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: $primary-font;
+                    color: $grey;
+                    font-size: 18px;
+                    position: relative;
+
+                    &.active::before {
+                        content: "";
+                        width: 80%;
+                        height: 5px;
+                        position: absolute;
+                        top: 30px;
+                        left: 0%;
+                        background-color: $pink;
+                    }
+                }
+            }
+        }
+    }
+}
