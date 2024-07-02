@@ -29,7 +29,7 @@
   font-size: 18px;
   position: relative;
 }
-.header__container-nav-ul li a.active::before {
+.header__container-nav-ul li a:hover::before {
   content: "";
   width: 80%;
   height: 5px;

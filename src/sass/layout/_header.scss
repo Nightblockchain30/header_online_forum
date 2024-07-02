@@ -24,7 +24,17 @@
                     font-size: 18px;
                     position: relative;
 
-                    &.active::before {
+                    // &.active {
+                    //     content: "";
+                    //     width: 80%;
+                    //     height: 5px;
+                    //     position: absolute;
+                    //     top: 30px;
+                    //     left: 0%;
+                    //     background-color: $pink;
+                    // }
+
+                    &:hover::before {
                         content: "";
                         width: 80%;
                         height: 5px;
