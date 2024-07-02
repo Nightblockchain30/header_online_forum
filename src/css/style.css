@@ -6,16 +6,20 @@
 }
 
 body {
-  background-color: #454751;
+  background-color: #2E2F38;
 }
 
 main {
   margin-top: 157px;
   margin-left: 160px;
+  margin-right: 160px;
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 960px;
+}
+main .main__container_hero {
+  margin-top: 150px;
 }
 main .main__container_hero-h1 {
   font-family: "Merriweather", serif;
@@ -24,7 +28,41 @@ main .main__container_hero-h1 {
 }
 main .main__container_hero-p {
   color: #ABABAB;
-  font-size: 24px;
+  font-size: 28px;
+  max-width: 75%;
+  margin-bottom: 52px;
+}
+main .main__container__buttons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+main .main__container__buttons-left a {
+  padding: 16px 69px;
+  background-color: #DB2A6B;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px 10px 10px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+main .main__container__buttons-left a:hover {
+  transform: scale(1.2);
+}
+main .main__container__buttons-left a:active {
+  box-shadow: -7px 10px 26px -8px rgba(13, 11, 12, 0.75);
+  background-color: #DB2A6B;
+  color: white;
+}
+main .main__container__buttons-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+main .main__container__buttons-right a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 main .main__container_imgs {
   display: inline-flex;
@@ -49,6 +87,7 @@ main .main__container_imgs-grid1 .main__container_imgs-black {
 main .main__container_imgs-grid1 .main__container_imgs-black:hover {
   border-radius: 40px;
   transition: all 1.5s;
+  background-position: -390px -10px;
 }
 main .main__container_imgs-grid1 .main__container_imgs-redhair {
   background-color: #DB2A6B;
@@ -59,12 +98,13 @@ main .main__container_imgs-grid1 .main__container_imgs-redhair {
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: 800px;
-  background-position: -270px -300px;
+  background-position: -270px -280px;
   transition: all 1s;
 }
 main .main__container_imgs-grid1 .main__container_imgs-redhair:hover {
   border-radius: 40px;
   transition: all 1.5s;
+  background-position: -270px -300px;
 }
 main .main__container_imgs-grid2 {
   display: grid;
@@ -79,12 +119,13 @@ main .main__container_imgs-grid2 .main__container_imgs-asian {
   background-image: url("../img/hero-asian.png");
   background-repeat: no-repeat;
   background-size: 780px;
-  background-position: -270px -20px;
+  background-position: -270px -10px;
   transition: all 1s;
 }
 main .main__container_imgs-grid2 .main__container_imgs-asian:hover {
   border-radius: 40px;
   transition: all 1.5s;
+  background-position: -270px -25px;
 }
 main .main__container_imgs-grid2 .main__container_imgs-glasses {
   background-color: #FF7E29;
@@ -100,6 +141,7 @@ main .main__container_imgs-grid2 .main__container_imgs-glasses {
 main .main__container_imgs-grid2 .main__container_imgs-glasses:hover {
   border-radius: 40px;
   transition: all 1.5s;
+  background-position: -320px -20px;
 }
 main .main__container_imgs-grid3 {
   display: grid;
@@ -113,10 +155,11 @@ main .main__container_imgs-grid3 .main__container_imgs-happy-black {
   background-image: url("../img/hero-happy-black.png");
   background-repeat: no-repeat;
   background-size: 790px;
-  background-position: -380px -79px;
+  background-position: -380px -60px;
   transition: all 1s;
 }
 main .main__container_imgs-grid3 .main__container_imgs-happy-black:hover {
   border-radius: 40px;
   transition: all 1.5s;
+  background-position: -380px -80px;
 }/*# sourceMappingURL=style.css.map */

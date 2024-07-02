@@ -1,6 +1,7 @@
 main {
     margin-top: 157px;
     margin-left: 160px;
+    margin-right: 160px;
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,7 +9,7 @@ main {
 
 
     .main__container_hero {
-
+        margin-top: 150px;
 
         &-h1 {
             font-family: $second-font;
@@ -18,7 +19,49 @@ main {
 
         &-p {
             color: $grey;
-            font-size: 24px;
+            font-size: 28px;
+            max-width: 75%;
+            margin-bottom: 52px;
+        }
+    }
+
+    .main__container__buttons {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+
+        &-left {
+            a {
+                padding: 16px 69px;
+                background-color: $pink;
+                text-decoration: none;
+                color: white;
+                border-radius: 10px 10px 10px 0px;
+                font-family: $primary-font;
+                font-weight: 700;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                &:active {
+                    box-shadow: -7px 10px 26px -8px rgba(13, 11, 12, 0.75);
+                    background-color: $pink;
+                    color: white;
+                }
+            }
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            a {
+                color: white;
+                font-family: $primary-font;
+                font-weight: 600;
+            }
         }
     }
 
@@ -46,6 +89,7 @@ main {
                 &:hover {
                     border-radius: 40px;
                     transition: all 1.5s;
+                    background-position: -390px -10px;
                 }
             }
 
@@ -60,13 +104,14 @@ main {
                 background-repeat: no-repeat;
                 background-repeat: no-repeat;
                 background-size: 800px;
-                background-position: -270px -300px;
+                background-position: -270px -280px;
                 transition: all 1s;
 
 
                 &:hover {
                     border-radius: 40px;
                     transition: all 1.5s;
+                    background-position: -270px -300px;
                 }
 
             }
@@ -87,12 +132,13 @@ main {
                 background-image: url("../img/hero-asian.png");
                 background-repeat: no-repeat;
                 background-size: 780px;
-                background-position: -270px -20px;
+                background-position: -270px -10px;
                 transition: all 1s;
 
                 &:hover {
                     border-radius: 40px;
                     transition: all 1.5s;
+                    background-position: -270px -25px;
                 }
             }
 
@@ -113,6 +159,7 @@ main {
                 &:hover {
                     border-radius: 40px;
                     transition: all 1.5s;
+                    background-position: -320px -20px;
                 }
 
             }
@@ -132,12 +179,13 @@ main {
                 background-image: url("../img/hero-happy-black.png");
                 background-repeat: no-repeat;
                 background-size: 790px;
-                background-position: -380px -79px;
+                background-position: -380px -60px;
                 transition: all 1s;
 
                 &:hover {
                     border-radius: 40px;
                     transition: all 1.5s;
+                    background-position: -380px -80px;
                 }
 
             }
