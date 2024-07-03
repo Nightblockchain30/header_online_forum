@@ -24,24 +24,18 @@
                     font-size: 18px;
                     position: relative;
 
-                    // &.active {
-                    //     content: "";
-                    //     width: 80%;
-                    //     height: 5px;
-                    //     position: absolute;
-                    //     top: 30px;
-                    //     left: 0%;
-                    //     background-color: $pink;
-                    // }
+                    &:hover,
+                    &.active {
 
-                    &:hover::before {
-                        content: "";
-                        width: 80%;
-                        height: 5px;
-                        position: absolute;
-                        top: 30px;
-                        left: 0%;
-                        background-color: $pink;
+                        &::before {
+                            content: "";
+                            width: 80%;
+                            height: 5px;
+                            position: absolute;
+                            top: 30px;
+                            left: 0%;
+                            background-color: $pink;
+                        }
                     }
                 }
             }
